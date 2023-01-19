@@ -1,5 +1,5 @@
 const viewButton = document.querySelector('#viewButton');
-leadButton.addEventListener('click', view);
+viewButton.addEventListener('click', view);
 
 const leadButton = document.querySelector('#leadButton');
 leadButton.addEventListener('click', lead);
@@ -26,6 +26,7 @@ function view() {
     }
     w.pdst('view');
   })(window, document);
+  console.log('Clicked View Button');
 };
 
 function lead() {
@@ -51,6 +52,7 @@ function lead() {
       type: "car",
       category: "ford"})
   })(window, document);
+  console.log('Clicked Lead Button');
 };
 
 function purchase() {
@@ -77,4 +79,5 @@ function purchase() {
       order_id: '12322323232',
       is_new_customer: false});
   })(window, document);
+  console.log('Clicked Purchase Button');
 };
