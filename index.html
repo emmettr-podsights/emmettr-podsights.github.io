@@ -59,6 +59,8 @@
           }
           w.pdst('conf', { key: 'fdfb72a9fc4a4b40a5a20de7dec6b230' });
           w.pdst('view');
+          const podsightsid = Math.random().toString(16).slice(2);
+          w.pdst('alias', { id: '{{podsightsid}}' });
         })(window, document);
       </script>
 </body>
