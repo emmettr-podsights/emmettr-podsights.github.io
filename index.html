@@ -35,6 +35,7 @@
         <button id="viewButton">View</button>
         <button id="leadButton">Lead</button>
         <button id="purchaseButton">Purchase</button>
+        <button id="purchaseWithAliasButton">Purchase (with Alias)</button>
     </main>
     <footer>
         <ul class="footer-content">
@@ -59,8 +60,6 @@
           }
           w.pdst('conf', { key: 'fdfb72a9fc4a4b40a5a20de7dec6b230' });
           w.pdst('view');
-          const podsightsid = Math.random().toString(16).slice(2);
-          w.pdst('alias', { id: '{{podsightsid}}' });
         })(window, document);
       </script>
 </body>
