@@ -59,10 +59,8 @@ function lead() {
 };
 
 function purchase() {
-  {% assign discount_code = '' %}
-  {% for discount_application in checkout.discount_applications %}
-    {% assign discount_code = discount_application.title %}
-  {% endfor %}
+  test_discount_code = 'TESTING'
+
   (function (w, d) {
     var id = 'pdst-capture',
       n = 'script';
@@ -82,7 +80,7 @@ function purchase() {
     w.pdst('purchase', {
       value: 10.0, // price
       currency: 'USD',
-      discount_code: "{{ discount_code }}",
+      discount_code: "{{ test_discount_code }}",
       order_id: '12322323232',
       is_new_customer: false,
       quantity: 3,
