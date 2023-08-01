@@ -59,7 +59,7 @@ function lead() {
 };
 
 function purchase() {
-  test_discount_code = 'TESTING'
+  test_discount_code = 'TESTING';
 
   (function (w, d) {
     var id = 'pdst-capture',
