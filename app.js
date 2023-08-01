@@ -80,7 +80,7 @@ function purchase() {
     w.pdst('purchase', {
       value: 10.0, // price
       currency: 'USD',
-      discount_code: "{{ test_discount_code }}",
+      discount_code: test_discount_code,
       order_id: '12322323232',
       is_new_customer: false,
       quantity: 3,
